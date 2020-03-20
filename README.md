@@ -148,12 +148,7 @@ Si por otro lado lo ejecutó en su computador, entonces la salida va a estar en 
 
 ![](img/python/python1.gif)
 
-Acá abajo pueden ejecutar el código usado. También está disponible en la carpeta ``archivos->python`` de este repositorio
-
-
-
-<iframe height="400px" width="100%" src="https://repl.it/repls/WeepyConcernedProgrammingmacro?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
+[Acá](https://repl.it/repls/WeepyConcernedProgrammingmacro?lite=true)  pueden ejecutar el código usado. También está disponible en la carpeta ``archivos->python`` de este repositorio
 
 
 ### Octave
