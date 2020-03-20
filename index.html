@@ -1,11 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -58,40 +61,40 @@ $$</span><br /></p>
 <h3 id="excel">Excel</h3>
 <h4 id="vector-por-escalar">Vector por escalar</h4>
 <p>Excel es un programa de pago de la empresa Microsoft, consiste en una <em>hoja de cálculo</em> donde se puede representar un vector como una columna:</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel1.png" />
-</div>
+</figure>
 <p>Si se fijan, hay algunos números que aparecen al lado izquierdo y otros al lado derecho. Dependiendo de la configuración en excel, la separación de decimales va a ser o bien una coma o bien un punto. En sistemas en español suele venir como una coma, por lo que si queremos que excel entienda esos números, tenemos que cambiar los puntos por comas.</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel2.png" />
-</div>
+</figure>
 <p>Vemos que ahora todos nuestro números están alineados a la derecha, este es el comportamiento que esperamos.</p>
 <p>Ahora vamos a multiplicar la columna de variable independiente por 3.14. Para esto, primero hagamos que una celda tenga ese valor. Una vez hecho eso, creamos una nueva columna donde vamos a multiplicar la variable dependiente por el escalar y en la primera fila de la columna introducimos el siguiente texto: '=CPVD*<span class="math"><em>L</em><em>C</em><em>E</em></span>NCE' donde CPVD es la celda de la primera variable dependiente, LCE la letra de la celda del escalar y NCE es el número de la celda del escalar.</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel3.png" />
-</div>
+</figure>
 <p>Una vez hecho eso, presione la tecla 'enter' y deberia aparecer el primer resultado como en la imágen anterior.</p>
 <p>Ahora arrastre el punto verde de la primera celda de la columna de la multiplicacion del escalar con la variable dependiente</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel4.gif" />
-</div>
+</figure>
 <h4 id="graficando-resultados">Graficando resultados</h4>
 <p>Para graficar los resultados excel tiene botones rápidos. Primero sosteniendo la tecla Ctrl en Windows o cmd en Mac seleccionamos las dos columnas que queremos graficar juntas, siempre primero seleccionamos la variable independiente y luego la dependiente.</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel5.gif" />
-</div>
+</figure>
 <p>Una vez seleccionado vaya al menú insetar en las pestañas superiores, sobreponga su cursor en el botón de gráfico con puntos y seleccione dispersión</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel6.png" />
-</div>
+</figure>
 <p>Al hacer click debería aparecerles un gráfico automático.</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel7.png" />
-</div>
+</figure>
 <p>Ahora puede agregar los títulos de los ejes de la siguiente manera: Primero seleccione el gráfico y vaya a <em>Diseño de gráfico</em>, luego <em>Agregar elemento de gráfico -&gt; títulos de los ejes</em> y marque ambos</p>
-<div class="figure">
+<figure>
 <img src="img/excel/excel8.gif" />
-</div>
+</figure>
 <p>Ahora pueden cambiar tanto el título del gráfico como las etiquetas, dando doble click y escribiendo los nuevos títulos.</p>
 <h3 id="python">Python</h3>
 <h4 id="vector-por-escalar-1">Vector por escalar</h4>
@@ -122,9 +125,9 @@ plt.ylabel(<span class="st">&#39;variable dependiente&#39;</span>)
 plt.grid()  <span class="co"># ponemos una grilla para facilitar lectura</span>
 plt.savefig(<span class="st">&#39;plot.png&#39;</span>)  <span class="co"># guardamos el gráfico</span></code></pre>
 <p>si están en repl.it les va a aparecer el gráfico en la barra lateral izquierda, de donde lo pueden descargar. Si por otro lado lo ejecutó en su computador, entonces la salida va a estar en su carpeta de trabajo</p>
-<div class="figure">
+<figure>
 <img src="img/python/python1.gif" />
-</div>
+</figure>
 <p>Acá abajo pueden ejecutar el código usado. También está disponible en la carpeta <code>archivos-&gt;python</code> de este repositorio</p>
 <iframe height="400px" width="100%" src="https://repl.it/repls/WeepyConcernedProgrammingmacro?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -142,9 +145,9 @@ variableDependiente = [<span class="fl">368.4</span>, <span class="fl">101.0</sp
 <p>y de igual manera la multiplicación</p>
 <pre class="sourceCode octave"><code class="sourceCode octave">variableDependientePorEscalar = escalar * variableDependiente</code></pre>
 <p>A medida que van ingresando las variables, debería verse algo así:</p>
-<div class="figure">
+<figure>
 <img src="img/octave/octave1.png" />
-</div>
+</figure>
 <h4 id="graficando-1">Graficando</h4>
 <p>Para graficar, de manera similar a python, tenemos el siguiente código</p>
 <pre class="sourceCode octave"><code class="sourceCode octave"><span class="fu">plot</span>(variableIndependiente, variableDependiente, <span class="st">&#39;.&#39;</span>)
@@ -153,9 +156,9 @@ variableDependiente = [<span class="fl">368.4</span>, <span class="fl">101.0</sp
 <span class="fu">ylabel</span>(<span class="st">&#39;variable dependiente&#39;</span>)
 <span class="fu">grid</span>()</code></pre>
 <p>finalmente para guardar el gráfico solo tenemos que dar botón secundario en la imagen y guardar como:</p>
-<div class="figure">
+<figure>
 <img src="img/octave/octave2.png" />
-</div>
+</figure>
 <h2 id="indicaciones">Indicaciones</h2>
 <p>Cualquier duda favor consultar a sus respectivs auxiliars. Si encuentra un error en esta guía favor informar.</p>
 </body>
