@@ -14,21 +14,17 @@ En esta guía básica veremos cómo utilizar 3 herramientas distintas:
 Para el caso de MATLAB ya existe una guía que estará disponible
 
 Para cáda software haremos la misma tarea:
-Dado un set de datos $\{(x_i, y_i)\}$ donde los $x_i$ corresponden a nuestra variable independiente (por ejemplo el tiempo) y nuestros $y_i$ son la variable dependiente (por ejemplo el voltaje).
+Dado un set de datos <img src="https://render.githubusercontent.com/render/math?math=\{(x_i, y_i)\}"> donde los <img src="https://render.githubusercontent.com/render/math?math=x_i"> corresponden a nuestra variable independiente (por ejemplo el tiempo) y nuestros <img src="https://render.githubusercontent.com/render/math?math=y_i"> son la variable dependiente (por ejemplo el voltaje).
 
 Más concretamente usaremos los siguientes datos:
-$$
-x = (1, 2.3, 3.1, 4.5, 5.0, 6.8, 7.3, 8.0, 9.4, 10)\\
-y = (368.4,  101.0,   45.2 ,   11.1,
-          7.5,    1.4,    1.1,    0.7,
-          0.3,    0.6)
-$$
+
+![](img/latex1.png)
 
 Usaremos estos datos para operar vectores con escalares.
 
-Cada uno de nuestros datos se puede ver como un vector $(x_i, y_i)$ donde $i \in \{0, 1, ..., N - 1\}$. En nuestro caso $N=10$
+Cada uno de nuestros datos se puede ver como un vector <img src="https://render.githubusercontent.com/render/math?math=(x_i, y_i)"> donde <img src="https://render.githubusercontent.com/render/math?math=i \in \{0, 1, ..., N - 1\}">. En nuestro caso <img src="https://render.githubusercontent.com/render/math?math=N=10">
 
-A su vez todos los datos de $x$ se pueden ver como un vector, tal como presentamos los datos anteriormente. Lo mismo es válido para los datos $y$. La gracia de esto es que ahora los podemos trabajar como todos los datos para la variable independiente por un lado, y todos los datos para la variable dependiente por otro.
+A su vez todos los datos de <img src="https://render.githubusercontent.com/render/math?math=x"> se pueden ver como un vector, tal como presentamos los datos anteriormente. Lo mismo es válido para los datos <img src="https://render.githubusercontent.com/render/math?math=y">. La gracia de esto es que ahora los podemos trabajar como todos los datos para la variable independiente por un lado, y todos los datos para la variable dependiente por otro.
 
 Por lo general queremos trabajar los datos de la variable intependiente. Por lo que en este documento haremos lo siguiente:
 
@@ -121,7 +117,7 @@ para multiplicar por el escalar, definimos una variable para este
 escalar = 3.14
 ```
 
-finalmente multiplicamos usando el operador multiplicación representado por $*$
+finalmente multiplicamos usando el operador multiplicación representado por <img src="https://render.githubusercontent.com/render/math?math=*">
 
 ```python
 variableDependientePorEscalar = escalar * variableDependiente
