@@ -4,7 +4,7 @@
   * [Herramientas](#herramientas)
     + [Excel](#excel)
       - [Vector por escalar](#vector-por-escalar)
-      - [Graficando resultados](#graficando-resultados)
+      - [Graficando](#graficando)
     + [Python](#python)
       - [Vector por escalar](#vector-por-escalar-1)
       - [Graficando](#graficando)
@@ -77,7 +77,7 @@ Ahora arrastre el punto verde de la primera celda de la columna de la multiplica
 
 ![](img/excel/excel4.gif)
 
-#### Graficando resultados
+#### Graficando
 
 Para graficar los resultados excel tiene botones rápidos. Primero sosteniendo la tecla Ctrl en Windows o cmd en Mac seleccionamos las dos columnas que queremos graficar juntas, siempre primero seleccionamos la variable independiente y luego la dependiente.
 
