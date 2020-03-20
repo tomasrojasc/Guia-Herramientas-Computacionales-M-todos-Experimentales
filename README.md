@@ -1,3 +1,19 @@
+# Contenidos
+
+- [Métodos experimentales](#m-todos-experimentales)
+  * [Herramientas](#herramientas)
+    + [Excel](#excel)
+      - [Vector por escalar](#vector-por-escalar)
+      - [Graficando resultados](#graficando-resultados)
+    + [Python](#python)
+      - [Vector por escalar](#vector-por-escalar-1)
+      - [Graficando](#graficando)
+    + [Octave](#octave)
+      - [Vector por escalar](#vector-por-escalar-2)
+      - [Graficando](#graficando-1)
+  * [Indicaciones](#indicaciones)
+
+
 # Métodos experimentales
 
 Este instructivo tiene por propósito ayudarlos a escoger herramientas computacionales para el curso _Métodos experimentales_
