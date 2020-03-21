@@ -1,0 +1,9 @@
+variableIndependiente = [1, 2.3, 3.1, 4.5, 5.0, 6.8, 7.3, 8.0, 9.4, 10]
+variableDependiente = [368.4, 101.0, 45.2 , 11.1, 7.5, 1.4, 1.1, 0.7, 0.3, 0.6]
+escalar = 3.14
+variableDependientePorEscalar = escalar * variableDependiente
+plot(variableIndependiente, variableDependiente, '.')
+title('Gráfico')
+xlabel('variable independiente')
+ylabel('variable dependiente')
+grid()
