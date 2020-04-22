@@ -210,7 +210,46 @@ finalmente para guardar el gráfico solo tenemos que dar botón secundario en la
 
 ![](img/octave/octave2.png)
 
+## Exportando datos desde LTSpice e importando en herramineta de procesamiento
 
+En este semestre, dada la modalidad online, estamos usando LTSpice. En esta sección veremos cómo exportar los datos de LTSpice e importarlos a Excel, MATLAB y Python.
+
+
+### Exportando desde LTSpice
+
+Para exportar los datos desde LTSpice, tienen que, una vez hecho su gráfico, tienen que apretar botón secundario en el gráfico y hacer click en ``File>Export data as text``, va a aparecer una ventana en donde deben especificar dónde va a ser guardado y además con qué nombre. Por defecto usa una carpeta de LTSpice. Aquí no se cambió pero se sugiere hacerlo para que esté en una carpeta que sepan llegar con facilidad usando el botón ``Browse``.
+
+![](img/LTSpice/LTSpice1.gif)
+
+
+Deberán terminar con un archivo como el que se ve a continuación:
+
+
+```
+time	I(R1)
+0.000000000000000e+000	1.200000e-002
+1.950621068105102e+001	1.200000e-002
+1.999449193105102e+001	1.200000e-002
+2.000000000000000e+001	1.200000e-002
+```
+
+
+### Importando datos en Excel
+
+Lo primero que hacemos es abrir un nuevo archivo de Excel en blanco, luego hacemos click en ``Archivo>Importar`` y en la ventana que aparece seleccione ``Archivo de texto``
+
+![](img/LTSpice/LTSpice2.gif)
+
+
+Luego de esto les aparecerá una ventana donde tienen que selesccionar el archivo con los datos a importar. Luego aparecerá otra ventana en donde debe hecer click en ``Finalizar``.
+
+![](img/LTSpice/LTSpice3.gif)
+
+
+Con eso deberían tener los datos de esta manera
+
+
+![](img/LTSpice/LTSpice2.png)
 
 
 ## Indicaciones
