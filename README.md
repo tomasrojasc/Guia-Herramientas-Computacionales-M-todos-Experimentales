@@ -1,19 +1,20 @@
 # Contenidos
 
-- [Métodos experimentales](#m-todos-experimentales)
-  * [Herramientas](#herramientas)
-    + [Excel](#excel)
-      - [Vector por escalar](#vector-por-escalar)
-      - [Graficando](#graficando)
-    + [Python](#python)
-      - [Vector por escalar](#vector-por-escalar-1)
-      - [Graficando](#graficando)
-    + [Octave](#octave)
-      - [Vector por escalar](#vector-por-escalar-2)
-      - [Graficando](#graficando-1)
-  * [Indicaciones](#indicaciones)
-
-
+  - [Métodos experimentales](#m-todos-experimentales)
+    * [Herramientas](#herramientas)
+      + [Excel](#excel)
+        - [Vector por escalar](#vector-por-escalar)
+        - [Graficando](#graficando)
+      + [Python](#python)
+        - [Vector por escalar](#vector-por-escalar-1)
+        - [Graficando](#graficando-1)
+      + [Octave](#octave)
+        - [Vector por escalar](#vector-por-escalar-2)
+        - [Graficando](#graficando-2)
+    * [Exportando datos desde LTSpice e importando en herramineta de procesamiento](#exportando-datos-desde-ltspice-e-importando-en-herramineta-de-procesamiento)
+      + [Exportando desde LTSpice](#exportando-desde-ltspice)
+      + [Importando datos en Excel](#importando-datos-en-excel)
+    * [Indicaciones](#indicaciones)
 # Métodos experimentales
 
 Este instructivo tiene por propósito ayudarlos a escoger herramientas computacionales para el curso _Métodos experimentales_
