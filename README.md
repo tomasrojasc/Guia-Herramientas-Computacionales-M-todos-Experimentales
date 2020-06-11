@@ -14,6 +14,7 @@
     * [Exportando datos desde LTSpice e importando en herramineta de procesamiento](#exportando-datos-desde-ltspice-e-importando-en-herramineta-de-procesamiento)
       + [Exportando desde LTSpice](#exportando-desde-ltspice)
       + [Importando datos en Excel](#importando-datos-en-excel)
+      + [Importando datos en Python](#importando-datos-en-python)
     * [Indicaciones](#indicaciones)
 # Métodos experimentales
 
@@ -252,6 +253,27 @@ Con eso deberían tener los datos de esta manera
 
 ![](img/LTSpice/LTSpice2.png)
 
+
+### Importando datos en Python
+
+Para importar datos en python necesitamos la librería ``numpy`` y de esta librería vamos a necesitar la función ``genfromtxt``, asumiendo que nuestros datos se encuentran en la misma carpeta donde estamos trabajando, y que se llaman ``datos.csv``(pueden tener cualquier otro nombre incluso pueden terminar en ``.txt`` con tal que cumpla el formato ``csv``)
+
+```python
+import numpy as np
+data = np.genfromtxt('datos.csv', delimiter=',', skip_header=1)
+```
+Con el parámetro ``delimiter`` estamos diciendo que lo que separa nuestros datos son comas y como los datos suelen venir con la primera fila siendo los nombres de las variables, ponemos el parámetro ``skip_header=1`` que nos dice que nos saltemos la primera línea ya que no son datos numéricos.
+
+Si además quieren separar las dos columnas que tiene el archivo de datos (puede tener más, per en el ejemplo de abajo hay dos), pueden usar la notación de unpacking de Python de la siguiente manera
+
+```python
+x, y = data.T
+```
+
+Se transpone ya que la primera dimensión del arreglo es el número de datos y la segunda es las columnas, pero queremos que ``x`` e ``y`` sean las columnas, por lo que debemos transponer el arreglo.
+
+
+El ejemplo al que se hace referencia se puede encontrar en el siguiente [enlace](https://repl.it/@TomasRojas2/Importando-datos-con-Python)
 
 ## Indicaciones
 
