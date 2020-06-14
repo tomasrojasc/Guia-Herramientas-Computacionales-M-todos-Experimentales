@@ -26,7 +26,7 @@ variableDependientePorEscalar = escalar * variableDependiente
 
 A medida que van ingresando las variables, debería verse algo así:
 
-![](img/octave/octave1.png)
+![](img/octave1.png)
 
 #### Graficando
 
@@ -43,4 +43,4 @@ grid()
 
 finalmente para guardar el gráfico solo tenemos que dar botón secundario en la imagen y guardar como:
 
-![](img/octave/octave2.png)
+![](img/octave2.png)
