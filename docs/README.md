@@ -1,21 +1,4 @@
-# Contenidos
 
-  - [Métodos experimentales](#m-todos-experimentales)
-    * [Herramientas](#herramientas)
-      + [Excel](#excel)
-        - [Vector por escalar](#vector-por-escalar)
-        - [Graficando](#graficando)
-      + [Python](#python)
-        - [Vector por escalar](#vector-por-escalar-1)
-        - [Graficando](#graficando-1)
-      + [Octave](#octave)
-        - [Vector por escalar](#vector-por-escalar-2)
-        - [Graficando](#graficando-2)
-    * [Exportando datos desde LTSpice e importando en herramineta de procesamiento](#exportando-datos-desde-ltspice-e-importando-en-herramineta-de-procesamiento)
-      + [Exportando desde LTSpice](#exportando-desde-ltspice)
-      + [Importando datos en Excel](#importando-datos-en-excel)
-      + [Importando datos en Python](#importando-datos-en-python)
-    * [Indicaciones](#indicaciones)
 # Métodos experimentales
 
 Este instructivo tiene por propósito ayudarlos a escoger herramientas computacionales para el curso _Métodos experimentales_
@@ -102,6 +85,24 @@ Primero seleccione el gráfico y vaya a _Diseño de gráfico_, luego _Agregar el
 
 Ahora pueden cambiar tanto el título del gráfico como las etiquetas, dando doble click y escribiendo los nuevos títulos.
 
+#### Importando datos en Excel
+
+Lo primero que hacemos es abrir un nuevo archivo de Excel en blanco, luego hacemos click en ``Archivo>Importar`` y en la ventana que aparece seleccione ``Archivo de texto``
+
+![](img/LTSpice/LTSpice2.gif)
+
+
+Luego de esto les aparecerá una ventana donde tienen que selesccionar el archivo con los datos a importar. Luego aparecerá otra ventana en donde debe hecer click en ``Finalizar``.
+
+![](img/LTSpice/LTSpice3.gif)
+
+
+Con eso deberían tener los datos de esta manera
+
+
+![](img/LTSpice/LTSpice2.png)
+
+
 ### Python
 #### Vector por escalar
 Python es un lenguaje multipropósito interpretado open source que funciona muy bien para análisis matemático. En caso que no tenga instalado Python en su ordenador, usaremos el siguiente link. Si tiene Python 3.7 o superior estas instrucciones deberían servirle sin problemas. Se asume que usted tiene instalados los paquetes numpy y matplotlib.
@@ -165,6 +166,27 @@ Si por otro lado lo ejecutó en su computador, entonces la salida va a estar en 
 [Acá](https://repl.it/repls/WeepyConcernedProgrammingmacro?lite=true)  pueden ejecutar el código usado. También está disponible en la carpeta ``archivos->python`` de este repositorio
 
 
+#### Importando datos en Python
+
+Para importar datos en python necesitamos la librería ``numpy`` y de esta librería vamos a necesitar la función ``genfromtxt``, asumiendo que nuestros datos se encuentran en la misma carpeta donde estamos trabajando, y que se llaman ``datos.csv``(pueden tener cualquier otro nombre incluso pueden terminar en ``.txt`` con tal que cumpla el formato ``csv``)
+
+```python
+import numpy as np
+data = np.genfromtxt('datos.csv', delimiter=',', skip_header=1)
+```
+Con el parámetro ``delimiter`` estamos diciendo que lo que separa nuestros datos son comas y como los datos suelen venir con la primera fila siendo los nombres de las variables, ponemos el parámetro ``skip_header=1`` que nos dice que nos saltemos la primera línea ya que no son datos numéricos.
+
+Si además quieren separar las dos columnas que tiene el archivo de datos (puede tener más, per en el ejemplo de abajo hay dos), pueden usar la notación de unpacking de Python de la siguiente manera
+
+```python
+x, y = data.T
+```
+
+Se transpone ya que la primera dimensión del arreglo es el número de datos y la segunda es las columnas, pero queremos que ``x`` e ``y`` sean las columnas, por lo que debemos transponer el arreglo.
+
+
+El ejemplo al que se hace referencia se puede encontrar en el siguiente [enlace](https://repl.it/@TomasRojas2/Importando-datos-con-Python)
+
 ### Octave
 #### Vector por escalar
 Octave es un lenguaje de programación open source para la operación de matrices, lo puede usar online [acá](https://octave-online.net/) pero también existe una versión instalable. Si no quieren hacer una cuenta (como es mi caso) pueden, en vez de hacer un script, ejecutar los comandos uno a uno.
@@ -212,12 +234,12 @@ finalmente para guardar el gráfico solo tenemos que dar botón secundario en la
 
 ![](img/octave/octave2.png)
 
-## Exportando datos desde LTSpice e importando en herramineta de procesamiento
+### LTSpice
 
-En este semestre, dada la modalidad online, estamos usando LTSpice. En esta sección veremos cómo exportar los datos de LTSpice e importarlos a Excel, MATLAB y Python.
+En este semestre, dada la modalidad online, estamos usando LTSpice. Por lo mismo, en esta sección se dedica un poco de tiempo a esta herramienta.
 
 
-### Exportando desde LTSpice
+#### Exportando desde LTSpice
 
 Para exportar los datos desde LTSpice, tienen que, una vez hecho su gráfico, tienen que apretar botón secundario en el gráfico y hacer click en ``File>Export data as text``, va a aparecer una ventana en donde deben especificar dónde va a ser guardado y además con qué nombre. Por defecto usa una carpeta de LTSpice. Aquí no se cambió pero se sugiere hacerlo para que esté en una carpeta que sepan llegar con facilidad usando el botón ``Browse``.
 
@@ -235,45 +257,9 @@ time	I(R1)
 2.000000000000000e+001	1.200000e-002
 ```
 
+## Archivos de ejemplos
 
-### Importando datos en Excel
-
-Lo primero que hacemos es abrir un nuevo archivo de Excel en blanco, luego hacemos click en ``Archivo>Importar`` y en la ventana que aparece seleccione ``Archivo de texto``
-
-![](img/LTSpice/LTSpice2.gif)
-
-
-Luego de esto les aparecerá una ventana donde tienen que selesccionar el archivo con los datos a importar. Luego aparecerá otra ventana en donde debe hecer click en ``Finalizar``.
-
-![](img/LTSpice/LTSpice3.gif)
-
-
-Con eso deberían tener los datos de esta manera
-
-
-![](img/LTSpice/LTSpice2.png)
-
-
-### Importando datos en Python
-
-Para importar datos en python necesitamos la librería ``numpy`` y de esta librería vamos a necesitar la función ``genfromtxt``, asumiendo que nuestros datos se encuentran en la misma carpeta donde estamos trabajando, y que se llaman ``datos.csv``(pueden tener cualquier otro nombre incluso pueden terminar en ``.txt`` con tal que cumpla el formato ``csv``)
-
-```python
-import numpy as np
-data = np.genfromtxt('datos.csv', delimiter=',', skip_header=1)
-```
-Con el parámetro ``delimiter`` estamos diciendo que lo que separa nuestros datos son comas y como los datos suelen venir con la primera fila siendo los nombres de las variables, ponemos el parámetro ``skip_header=1`` que nos dice que nos saltemos la primera línea ya que no son datos numéricos.
-
-Si además quieren separar las dos columnas que tiene el archivo de datos (puede tener más, per en el ejemplo de abajo hay dos), pueden usar la notación de unpacking de Python de la siguiente manera
-
-```python
-x, y = data.T
-```
-
-Se transpone ya que la primera dimensión del arreglo es el número de datos y la segunda es las columnas, pero queremos que ``x`` e ``y`` sean las columnas, por lo que debemos transponer el arreglo.
-
-
-El ejemplo al que se hace referencia se puede encontrar en el siguiente [enlace](https://repl.it/@TomasRojas2/Importando-datos-con-Python)
+Para descargar los archivos de ejemplos puedes ir a [esta página](https://github.com/tomasrojasc/Guia-Herramientas-Computacionales-M-todos-Experimentales/tree/master/archivos)
 
 ## Indicaciones
 
