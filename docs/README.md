@@ -259,7 +259,7 @@ time	I(R1)
 
 ## Archivos de ejemplos
 
-Para descargar los archivos de ejemplos puedes ir a [esta página](https://github.com/tomasrojasc/Guia-Herramientas-Computacionales-M-todos-Experimentales/tree/master/archivos)
+Para descargar los archivos de ejemplos puedes ir a [esta página](https://github.com/tomasrojasc/MetodosExperimentalesOnline/tree/master/docs)
 
 ## Indicaciones
 
