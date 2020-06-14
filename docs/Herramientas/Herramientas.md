@@ -14,7 +14,7 @@ Dado un set de datos <img src="https://render.githubusercontent.com/render/math?
 
 Más concretamente usaremos los siguientes datos:
 
-![](img/latex1.png)
+![](../img/latex1.png)
 
 Usaremos estos datos para operar vectores con escalares.
 
