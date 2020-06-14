@@ -56,7 +56,7 @@ plt.savefig('plot.png')  # guardamos el gráfico
 si están en repl.it les va a aparecer el gráfico en la barra lateral izquierda, de donde lo pueden descargar.
 Si por otro lado lo ejecutó en su computador, entonces la salida va a estar en su carpeta de trabajo
 
-![](../img/python/python1.gif)
+![](img/python1.gif)
 
 [Acá](https://repl.it/repls/WeepyConcernedProgrammingmacro?lite=true)  pueden ejecutar el código usado. También está disponible en la carpeta ``archivos->python`` de este repositorio
 

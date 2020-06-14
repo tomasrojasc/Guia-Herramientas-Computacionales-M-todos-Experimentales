@@ -7,7 +7,7 @@ En este semestre, dada la modalidad online, estamos usando LTSpice. Por lo mismo
 
 Para exportar los datos desde LTSpice, tienen que, una vez hecho su gráfico, tienen que apretar botón secundario en el gráfico y hacer click en ``File>Export data as text``, va a aparecer una ventana en donde deben especificar dónde va a ser guardado y además con qué nombre. Por defecto usa una carpeta de LTSpice. Aquí no se cambió pero se sugiere hacerlo para que esté en una carpeta que sepan llegar con facilidad usando el botón ``Browse``.
 
-![](../img/LTSpice/LTSpice1.gif)
+![](img/LTSpice1.gif)
 
 
 Deberán terminar con un archivo como el que se ve a continuación:
