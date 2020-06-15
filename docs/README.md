@@ -4,9 +4,23 @@
 Este instructivo tiene por propósito ayudarlos a escoger herramientas computacionales para el curso _Métodos experimentales_
 
 
+## Herramientas
+La idea de las herramientas computacionales es facilitar cálculos que serían muy complejos o tediosos de hacer a mano. Además nos proporcionan la opción de graficar de manera precisa nuestros datos y ver cómo se comportan.
 
+En esta guía básica veremos cómo utilizar 3 herramientas distintas:
+
+  * Excel
+  * Python
+  * Octave
 
 Para el caso de MATLAB ya existe una guía que estará disponible
+
+### Preámbulo
+> Nota: Este preámbulo es sólo válido para las secciones de "vector por escalar" y de "Graficando" para Excel, Python y Octave.
+
+
+
+
 
 Para cada software haremos la misma tarea:
 Dado un set de datos <img src="https://render.githubusercontent.com/render/math?math=\{(x_i, y_i)\}"> donde los <img src="https://render.githubusercontent.com/render/math?math=x_i"> corresponden a nuestra variable independiente (por ejemplo el tiempo) y nuestros <img src="https://render.githubusercontent.com/render/math?math=y_i"> son la variable dependiente (por ejemplo el voltaje).
@@ -28,9 +42,6 @@ Por lo general queremos trabajar los datos de la variable intependiente. Por lo 
   + Haremos un gráfico
 
 Estos pasos los haremos en todos los programas
-
-
-
 
 
 ### Excel
