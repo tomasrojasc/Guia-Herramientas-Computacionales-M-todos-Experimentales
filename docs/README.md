@@ -264,7 +264,7 @@ time	I(R1)
 
 ## Archivos de ejemplos
 
-Para descargar los archivos de ejemplos puedes ir a [esta página](https://github.com/tomasrojasc/MetodosExperimentalesOnline/tree/master/docs)
+Para descargar los archivos de ejemplos puedes ir a [esta página](https://github.com/tomasrojasc/MetodosExperimentalesOnline/tree/master/archivos)
 
 ## Indicaciones
 
