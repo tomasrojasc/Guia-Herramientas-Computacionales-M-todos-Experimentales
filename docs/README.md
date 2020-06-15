@@ -8,7 +8,7 @@ Este instructivo tiene por propósito ayudarlos a escoger herramientas computaci
 
 Para el caso de MATLAB ya existe una guía que estará disponible
 
-Para cáda software haremos la misma tarea:
+Para cada software haremos la misma tarea:
 Dado un set de datos <img src="https://render.githubusercontent.com/render/math?math=\{(x_i, y_i)\}"> donde los <img src="https://render.githubusercontent.com/render/math?math=x_i"> corresponden a nuestra variable independiente (por ejemplo el tiempo) y nuestros <img src="https://render.githubusercontent.com/render/math?math=y_i"> son la variable dependiente (por ejemplo el voltaje).
 
 Más concretamente usaremos los siguientes datos:
