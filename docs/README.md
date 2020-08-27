@@ -193,8 +193,6 @@ Se transpone ya que la primera dimensión del arreglo es el número de datos y l
 El ejemplo al que se hace referencia se puede encontrar en el siguiente [enlace](https://repl.it/@TomasRojas2/Importando-datos-con-Python)
 
 
-<a href="archivos/python/main.py" download>Acá</a> pueden descargar el archivo de python utilizado.
-
 ### Octave
 #### Vector por escalar
 Octave es un lenguaje de programación open source para la operación de matrices, lo puede usar online [acá](https://octave-online.net/) pero también existe una versión instalable. Si no quieren hacer una cuenta (como es mi caso) pueden, en vez de hacer un script, ejecutar los comandos uno a uno.
